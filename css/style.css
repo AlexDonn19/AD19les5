@@ -124,35 +124,26 @@ ul.menu-s li:hover {
 
 /* ----- VERTICAL LINE between menus ----- */
 
-.vert {
-    display: block;
-    float: right;
+li.second::after {
+	display:block;
+	position: absolute;
+	top: 2px;
+	bottom: 3px;
+	left: -2px;
     width: 1px;
-    height: 35px;
-    padding: 2px 0 3px 0;
-    margin-left: 15px;
-}
-
-@media (max-width: 703px) {
-    .vert {
-        margin-left: 2px;
-    }
-}
-
-.vert-line {
-    width: 1px;
-    height: 30px;
     background: #56a2dc;
+	content: "";
+	z-index: 2;
 }
-
 
 /* ----------------  FIRST MENU ------------- */
 
 .menu-f {
     display: block;
+	position: relative;
+	right: 20px;
     list-style: none;
 }
-
 .menu-f li {
     float: right;
     display: inline-block;
@@ -215,7 +206,7 @@ ul.menu-f li:hover a {
 }
 
 .cada-top {
-    font-size: 20px;
+    font-size: 13px;
     color: white;
     border-bottom: 2px solid white;
     padding: 3% 0;
@@ -223,31 +214,31 @@ ul.menu-f li:hover a {
 
 @media (max-width: 1199px) {
     .cada-top {
-        font-size: 17px;
+        font-size: 10px;
     }
 }
 
 @media (max-width: 1017px) {
     .cada-top {
-        font-size: 15px;
+        font-size: 8px;
     }
 }
 
 @media (max-width: 890px) {
     .cada-top {
-        font-size: 13px;
+        font-size: 11px;
     }
 }
 
 @media (max-width: 770px) {
     .cada-top {
-        font-size: 11px;
+        font-size: 9px;
     }
 }
 
 @media (max-width: 650px) {
     .cada-top {
-        font-size: 9px;
+        font-size: 7px;
     }
 }
 
